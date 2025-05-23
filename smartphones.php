@@ -25,7 +25,7 @@ include 'header.php';
                         <img src="<?php echo htmlspecialchars($product['image']); ?>" alt="<?php echo htmlspecialchars($product['name']); ?>">
                         <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                         <p><?php echo number_format($product['price'], 0, ',', '.') . ' VNĐ'; ?></p>
-                        <a href="product_detail.php?id=<?php echo $product['id']; ?>" class="btn-view">Xem chi tiết</a>
+                        <a href="product_details.php?id=<?php echo $product['id']; ?>" class="btn-view">Xem chi tiết</a>
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>
